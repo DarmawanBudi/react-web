@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardColumns, Button } from 'react-bootstrap';
-import Produk from "../data/data.json";
+import data from "../data/data.json";
 
 
 function Katalog() {
@@ -8,7 +8,7 @@ function Katalog() {
         <div className="container">
             <div className="row">
                 {
-                    Produk.map((data) => {
+                    data.map((data) => {
                         return (
                             <div className="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <Card>
