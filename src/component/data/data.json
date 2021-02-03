@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "nama": "baju",
+        "keterangan": "warna merah",
+        "harga": 100
+    },
+    {
+        "id": 2,
+        "nama": "kaos",
+        "keterangan": "warna merah",
+        "harga": 140
+    },
+    {
+        "id": 3,
+        "nama": "kemeja",
+        "keterangan": "warna merah",
+        "harga": 130
+    },
+    {
+        "id": 4,
+        "nama": "flanel",
+        "keterangan": "warna merah",
+        "harga": 160
+    },
+    {
+        "id": 5,
+        "nama": "jas",
+        "keterangan": "warna merah",
+        "harga": 190
+    }
+    
+]
