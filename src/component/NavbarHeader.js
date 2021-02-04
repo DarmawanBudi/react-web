@@ -1,9 +1,11 @@
+import { useState } from "react";
 import Home from "./Home";
 import About from "./About";
+import Contact from "./Contact";
+import Detail from "./Detail";
 import Katalog from "./Katalog/Katalog";
 import { BrowserRouter as Router, Switch, Route, Link, } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button, InputGroup } from 'react-bootstrap';
-import { useState } from "react";
 
 function NavbarHeader() {
   const [search, setSearch] = useState(null)
@@ -14,21 +16,22 @@ function NavbarHeader() {
     <>
       <Router>
         <Navbar expand="lg">
-          <Navbar.Brand href="#home"><h3>Shop</h3></Navbar.Brand>
+          <Navbar.Brand href="/"><h3>Shop</h3></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto nav">
               <Nav.Link><Link to="/" className="link">Home</Link></Nav.Link>
               <Nav.Link><Link to="/katalog" className="link">Katalog</Link></Nav.Link>
               <Nav.Link><Link to="/about" className="link">About</Link></Nav.Link>
+              <Nav.Link><Link to="/contact" className="link">Contact Us</Link></Nav.Link>
 
-              <NavDropdown className="link" title="Dropdown">
+              {/* <NavDropdown className="link" title="Dropdown">
                 <NavDropdown.Item><Link to="/" className="link">Home</Link></NavDropdown.Item>
                 <NavDropdown.Item><Link to="/katalog" className="link">Katalog 1</Link></NavDropdown.Item>
                 <NavDropdown.Item><Link to="/katalog" className="link">Katalog 2</Link></NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item><Link to="/katalog" className="link">Sold Out</Link></NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
 
               {/* <Nav.Link disabled><Link to="/about">Pre Order</Link></Nav.Link> */}
 
@@ -66,7 +69,12 @@ function NavbarHeader() {
           <Route path="/katalog">
             <Katalog />
           </Route>
-
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/detail">
+            <Detail />
+          </Route>
         </Switch>
       </Router >
     </>

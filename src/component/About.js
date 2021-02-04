@@ -2,9 +2,10 @@ import React from 'react';
 
 function About(){
 
-    return(
-        <div>
-            <p>about</p>
+    return (
+        <div className="container-fluid">
+            <h1>ABOUT</h1>
+            <button className="btn btn-danger">Tekan</button>
         </div>
     )
 }

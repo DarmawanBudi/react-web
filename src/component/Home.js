@@ -4,7 +4,7 @@ function Home() {
 
     return (
         <div className="container-fluid">
-            <p>lorem</p>
+            <h1>HOME</h1>
             <button className="btn btn-danger">Tekan</button>
         </div>
     )

@@ -3,31 +3,36 @@
         "id": 1,
         "nama": "baju",
         "keterangan": "warna merah",
-        "harga": 100
+        "harga": 100,
+        "gambar": "https://picsum.photos/200/300"
     },
     {
         "id": 2,
         "nama": "kaos",
         "keterangan": "warna merah",
-        "harga": 140
+        "harga": 140,
+        "gambar": "https://picsum.photos/200/300"
     },
     {
         "id": 3,
         "nama": "kemeja",
         "keterangan": "warna merah",
-        "harga": 130
+        "harga": 130,
+        "gambar": "https://picsum.photos/200/300"
     },
     {
         "id": 4,
         "nama": "flanel",
         "keterangan": "warna merah",
-        "harga": 160
+        "harga": 160,
+        "gambar": "https://picsum.photos/200/300"
     },
     {
         "id": 5,
         "nama": "jas",
         "keterangan": "warna merah",
-        "harga": 190
+        "harga": 190,
+        "gambar": "https://picsum.photos/200/300"
     }
     
 ]

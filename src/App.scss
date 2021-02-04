@@ -1,5 +1,9 @@
 // $primary-color: #4DBA8E;
 
+body {
+  line-height: normal;
+}
+
 .link {
   color: black;
   margin-left: 30px;
@@ -14,8 +18,26 @@
   border-color: #97B699;
   border-radius: 20px;
   margin-top: 10px;
+  transition: transform 0.1s;
   // margin-left: 35px;
   // width: 80%;
+}
+
+.card:hover {
+  box-shadow: 1px 2px 15px 2px #2958FF;
+  
+}
+
+.card:active {
+  transform: translate(0px, 10px);
+}
+
+.link-card {
+  color: black;
+}
+
+.link-card:hover {
+  text-decoration: none;
 }
 
 .navbar {
@@ -27,11 +49,13 @@
 }
 
 .cardImg {
-  padding: 10px;
+  padding: 5px;
 }
 
 .img {
   border-radius: 10px;
+  height: 150px;
+  width: 100%;
 }
 
 .footer {
